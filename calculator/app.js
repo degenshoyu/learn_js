@@ -12,7 +12,14 @@ allButton.forEach((button) => {
     if (button.innerText === "C") {
       display.innerText = "0";
     } else if (button.innerText === "⌫") {
-      display.innerText = display.innerText.slice(0, -1);
+      if (display.innerText === "ERROR!") {
+        display.innerText = "0";
+      } else {
+        display.innerText = display.innerText.slice(0, -1);
+        if (display.innerText === "") {
+          display.innerText = "0";
+        }
+      }
     } else if (button.innerText === "=")
       try {
         display.innerText = display.innerText.replaceAll("×", "*");
