@@ -82,6 +82,9 @@ main {
     inset -2px -2px 4px hsl(200 30% 32%);
 }
 
+.key--empty {
+  visibility: hidden;
+}
 .key--eql {
   background: hsl(200, 50%, 25%);
   font-weight: bold;
