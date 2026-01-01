@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My React Project</title>
+
+    <script src="./tailwind.js"></script>
+    <script src="./react.js"></script>
+    <script src="./react-dom.js"></script>
+    <script src="./babel.js"></script>
+
+    <script>
+        tailwind.config = { 
+            theme: { extend: { colors: { primary: '#2563eb' } } } 
+        }
+    </script>
+    <style>
+        body { background-color: #0f172a; color: white; user-select: none; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel" src="./App.js"></script>
+</body>
+</html>
